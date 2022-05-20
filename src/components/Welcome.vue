@@ -82,6 +82,8 @@
         </div>
       </div>
     </article>
+
+    <button class="uk-button uk-button-primary uk-button-large help-button">?</button>
   </div>
 </template>
 
@@ -108,6 +110,17 @@ h1 {
 }
 
 .more-button {
+  background-color: rgb(168, 173, 0);
+}
+
+.help-button {
+  position: fixed;
+  bottom: 5%;
+  right: 15%;
+  width: 6rem;
+  height: 6rem;
+  font-size: 2rem;
+  border-radius: 50%;
   background-color: rgb(168, 173, 0);
 }
 </style>
