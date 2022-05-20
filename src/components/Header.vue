@@ -23,70 +23,51 @@
         <ul class="uk-navbar-nav">
           <li class="uk-active">
             <a href="#">Geschäftskunden</a>
-            <div class="uk-navbar-dropdown">
-              <ul class="uk-nav uk-navbar-dropdown-nav">
-                <router-link
-                  to="/property"
-                  custom
-                  v-slot="{ navigate, href, route }"
-                >
-                  <li>
-                    <a :href="href" @click="navigate">{{ route.name }}</a>
-                  </li>
-                </router-link>
-                <router-link
-                  to="/employer"
-                  custom
-                  v-slot="{ navigate, href, route }"
-                >
-                  <li>
-                    <a :href="href" @click="navigate">{{ route.name }}</a>
-                  </li>
-                </router-link>
-                <router-link
-                  to="/public_charging"
-                  custom
-                  v-slot="{ navigate, href, route }"
-                >
-                  <li>
-                    <a :href="href" @click="navigate">{{ route.name }}</a>
-                  </li>
-                </router-link>
-                <router-link
-                  to="/tourism_and_gastro"
-                  custom
-                  v-slot="{ navigate, href, route }"
-                >
-                  <li>
-                    <a :href="href" @click="navigate">{{ route.name }}</a>
-                  </li>
-                </router-link>
-                <li><a href="#">Referenzen</a></li>
-              </ul>
-            </div>
           </li>
           <li>
             <a href="#">Produkte & Dienstleistungen</a>
             <div class="uk-navbar-dropdown">
               <ul class="uk-nav uk-navbar-dropdown-nav">
-                <li><a href="#">Ladestationen</a></li>
-                <li><a href="#">Installationen</a></li>
-                <li><a href="#">Lastmanagement</a></li>
-                <li><a href="#">Servicepakete</a></li>
-                <li><a href="#">Software</a></li>
-                <li><a href="#">Garagenprüfung</a></li>
+                <li>
+                  <a href="#">Ladestationen</a>
+                </li>
+                <li>
+                  <a href="#">Installationen</a>
+                </li>
+                <li>
+                  <a href="#">Lastmanagement</a>
+                </li>
+                <li>
+                  <a href="#">Servicepakete</a>
+                </li>
+                <li>
+                  <a href="#">Software</a>
+                </li>
+                <li>
+                  <a href="#">Offerte anfragen</a>
+                </li>
               </ul>
             </div>
           </li>
           <li>
-            <a href="#">E-Auto Fahrer</a>
+            <a href="#">Tipps und Tricks</a>
             <div class="uk-navbar-dropdown">
               <ul class="uk-nav uk-navbar-dropdown-nav">
-                <li><a href="#">Netzwerk</a></li>
-                <li><a href="#">Ladeanleitung</a></li>
-                <li><a href="#">Zuhause laden</a></li>
-                <li><a href="#">Produkte & Shop</a></li>
-                <li><a href="#">Karte & Tarife</a></li>
+                <li>
+                  <a href="#">Ladeanleitung</a>
+                </li>
+                <li>
+                  <a href="#">Zu Hause laden</a>
+                </li>
+                <li>
+                  <a href="#">Karte</a>
+                </li>
+                <li>
+                  <a href="#">Webinar</a>
+                </li>
+                <li>
+                  <a href="#">Events</a>
+                </li>
               </ul>
             </div>
           </li>
@@ -97,13 +78,23 @@
             <a href="#">Über Uns</a>
             <div class="uk-navbar-dropdown">
               <ul class="uk-nav uk-navbar-dropdown-nav">
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Webinar & Events</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Newsletter</a></li>
+                <li>
+                  <a href="#">Referenzen</a>
+                </li>
+                <li>
+                  <a href="#">Team</a>
+                </li>
+                <li>
+                  <a href="#">Geschichte</a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
+                </li>
               </ul>
             </div>
+          </li>
+          <li>
+            <a href="#">Support</a>
           </li>
         </ul>
       </div>
@@ -127,70 +118,51 @@
           <ul class="uk-nav">
             <li class="uk-active">
               <a href="#">Geschäftskunden</a>
-              <div class="uk-navbar-dropdown">
-                <ul class="uk-nav uk-navbar-dropdown-nav">
-                  <router-link
-                    to="/property"
-                    custom
-                    v-slot="{ navigate, href, route }"
-                  >
-                    <li>
-                      <a :href="href" @click="navigate">{{ route.name }}</a>
-                    </li>
-                  </router-link>
-                  <router-link
-                    to="/employer"
-                    custom
-                    v-slot="{ navigate, href, route }"
-                  >
-                    <li>
-                      <a :href="href" @click="navigate">{{ route.name }}</a>
-                    </li>
-                  </router-link>
-                  <router-link
-                    to="/public_charging"
-                    custom
-                    v-slot="{ navigate, href, route }"
-                  >
-                    <li>
-                      <a :href="href" @click="navigate">{{ route.name }}</a>
-                    </li>
-                  </router-link>
-                  <router-link
-                    to="/tourism_and_gastro"
-                    custom
-                    v-slot="{ navigate, href, route }"
-                  >
-                    <li>
-                      <a :href="href" @click="navigate">{{ route.name }}</a>
-                    </li>
-                  </router-link>
-                  <li><a href="#">Referenzen</a></li>
-                </ul>
-              </div>
             </li>
             <li>
               <a href="#">Produkte & Dienstleistungen</a>
               <div class="uk-navbar-dropdown">
                 <ul class="uk-nav uk-navbar-dropdown-nav">
-                  <li><a href="#">Ladestationen</a></li>
-                  <li><a href="#">Installationen</a></li>
-                  <li><a href="#">Lastmanagement</a></li>
-                  <li><a href="#">Servicepakete</a></li>
-                  <li><a href="#">Software</a></li>
-                  <li><a href="#">Garagenprüfung</a></li>
+                  <li>
+                    <a href="#">Ladestationen</a>
+                  </li>
+                  <li>
+                    <a href="#">Installationen</a>
+                  </li>
+                  <li>
+                    <a href="#">Lastmanagement</a>
+                  </li>
+                  <li>
+                    <a href="#">Servicepakete</a>
+                  </li>
+                  <li>
+                    <a href="#">Software</a>
+                  </li>
+                  <li>
+                    <a href="#">Offerte anfragen</a>
+                  </li>
                 </ul>
               </div>
             </li>
             <li>
-              <a href="#">E-Auto Fahrer</a>
+              <a href="#">Tipps und Tricks</a>
               <div class="uk-navbar-dropdown">
                 <ul class="uk-nav uk-navbar-dropdown-nav">
-                  <li><a href="#">Netzwerk</a></li>
-                  <li><a href="#">Ladeanleitung</a></li>
-                  <li><a href="#">Zuhause laden</a></li>
-                  <li><a href="#">Produkte & Shop</a></li>
-                  <li><a href="#">Karte & Tarife</a></li>
+                  <li>
+                    <a href="#">Ladeanleitung</a>
+                  </li>
+                  <li>
+                    <a href="#">Zu Hause laden</a>
+                  </li>
+                  <li>
+                    <a href="#">Karte</a>
+                  </li>
+                  <li>
+                    <a href="#">Webinar</a>
+                  </li>
+                  <li>
+                    <a href="#">Events</a>
+                  </li>
                 </ul>
               </div>
             </li>
@@ -201,23 +173,29 @@
               <a href="#">Über Uns</a>
               <div class="uk-navbar-dropdown">
                 <ul class="uk-nav uk-navbar-dropdown-nav">
-                  <li><a href="#">Team</a></li>
-                  <li><a href="#">Webinar & Events</a></li>
-                  <li><a href="#">Support</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Newsletter</a></li>
+                  <li>
+                    <a href="#">Referenzen</a>
+                  </li>
+                  <li>
+                    <a href="#">Team</a>
+                  </li>
+                  <li>
+                    <a href="#">Geschichte</a>
+                  </li>
+                  <li>
+                    <a href="#">Blog</a>
+                  </li>
                 </ul>
               </div>
+            </li>
+            <li>
+              <a href="#">Support</a>
             </li>
             <li>
               <a href="#" uk-toggle="target: #login-modal">Login</a>
             </li>
             <li>
-              <router-link
-                to="/register"
-                custom
-                v-slot="{ navigate, href, route }"
-              >
+              <router-link to="/register" custom v-slot="{ navigate, href, route }">
                 <li>
                   <a :href="href" @click="navigate">{{ route.name }}</a>
                 </li>
@@ -236,31 +214,19 @@
 
         <p uk-margin>
           <button
-            class="
-              uk-button uk-button-default uk-button-large uk-width-1-1
-              login-option-button
-              uk-text-left uk-padding-small
-            "
+            class="uk-button uk-button-default uk-button-large uk-width-1-1 login-option-button uk-text-left uk-padding-small"
           >
             <span uk-icon="icon: user; ratio: 1"></span>
             Privater E-Drive : Ich fahre ein Elektroauto.
           </button>
           <button
-            class="
-              uk-button uk-button-default uk-button-large uk-width-1-1
-              login-option-button
-              uk-text-left uk-padding-small
-            "
+            class="uk-button uk-button-default uk-button-large uk-width-1-1 login-option-button uk-text-left uk-padding-small"
           >
             <span uk-icon="icon: server; ratio: 1"></span>
             Geschäftskunde: Ich vertrete eine Firma.
           </button>
           <button
-            class="
-              uk-button uk-button-default uk-button-large uk-width-1-1
-              login-option-button
-              uk-text-left uk-padding-small
-            "
+            class="uk-button uk-button-default uk-button-large uk-width-1-1 login-option-button uk-text-left uk-padding-small"
           >
             <span uk-icon="icon: mail; ratio: 1"></span>
             Individueller Flottenkunde: Von meiner Firma eingeladen.
