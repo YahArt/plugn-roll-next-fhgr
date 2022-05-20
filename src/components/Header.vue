@@ -104,11 +104,9 @@
           <li>
             <a href="#" uk-toggle="target: #login-modal">Login</a>
           </li>
-          <router-link to="/register" custom v-slot="{ navigate, href, route }">
-            <li>
-              <a :href="href" @click="navigate">{{ route.name }}</a>
-            </li>
-          </router-link>
+          <li>
+            <a href="#" uk-toggle="target: #register-modal">Registrieren</a>
+          </li>
         </ul>
       </div>
 
@@ -195,11 +193,7 @@
               <a href="#" uk-toggle="target: #login-modal">Login</a>
             </li>
             <li>
-              <router-link to="/register" custom v-slot="{ navigate, href, route }">
-                <li>
-                  <a :href="href" @click="navigate">{{ route.name }}</a>
-                </li>
-              </router-link>
+              <a href="#" uk-toggle="target: #register-modal">Registrieren</a>
             </li>
           </ul>
         </div>
@@ -209,6 +203,35 @@
     <div id="login-modal" uk-modal>
       <div class="uk-modal-dialog uk-modal-body">
         <h2 class="uk-modal-title uk-text-center">Login</h2>
+        <p class="line"></p>
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+
+        <p uk-margin>
+          <button
+            class="uk-button uk-button-default uk-button-large uk-width-1-1 login-option-button uk-text-left uk-padding-small"
+          >
+            <span uk-icon="icon: user; ratio: 1"></span>
+            Privater E-Drive : Ich fahre ein Elektroauto.
+          </button>
+          <button
+            class="uk-button uk-button-default uk-button-large uk-width-1-1 login-option-button uk-text-left uk-padding-small"
+          >
+            <span uk-icon="icon: server; ratio: 1"></span>
+            Geschäftskunde: Ich vertrete eine Firma.
+          </button>
+          <button
+            class="uk-button uk-button-default uk-button-large uk-width-1-1 login-option-button uk-text-left uk-padding-small"
+          >
+            <span uk-icon="icon: mail; ratio: 1"></span>
+            Individueller Flottenkunde: Von meiner Firma eingeladen.
+          </button>
+        </p>
+      </div>
+    </div>
+
+    <div id="register-modal" uk-modal>
+      <div class="uk-modal-dialog uk-modal-body">
+        <h2 class="uk-modal-title uk-text-center">Registrieren als</h2>
         <p class="line"></p>
         <button class="uk-modal-close-default" type="button" uk-close></button>
 
