@@ -257,10 +257,44 @@
         </p>
       </div>
     </div>
+
+    <div id="newsletter-modal" uk-modal>
+      <div class="uk-modal-dialog uk-modal-body">
+        <h2 class="uk-modal-title uk-text-center">Abonnieren Sie unseren Newsletter</h2>
+        <p class="line"></p>
+
+        <p class="uk-text-center">
+          <span uk-icon="icon: bolt; ratio: 1"></span> Bleiben Sie immer auf dem neusten Stand der Elektromibilität
+          <span
+            uk-icon="icon: bolt; ratio: 1"
+          ></span>
+        </p>
+
+        <form class="uk-form-stacked">
+          <div class="uk-margin">
+            <label class="uk-form-label" for="form-stacked-text">E-Mail</label>
+            <div class="uk-form-controls">
+              <input
+                class="uk-input"
+                id="form-stacked-text"
+                type="email"
+                placeholder="Ihre E-Mail Adresse"
+              />
+            </div>
+          </div>
+
+          <button class="uk-button uk-button-primary subscribe-button" type="submit">Abonnieren</button>
+        </form>
+
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+import UIkit from 'uikit';
+
 export default {
   name: "Header",
   props: {},
@@ -268,8 +302,13 @@ export default {
   methods: {
     navigateToHome: function () {
       this.$router.push("/");
-    },
+    }
   },
+  mounted: function () {
+    setTimeout(() => {
+      UIkit.modal(document.getElementById("newsletter-modal")).show();
+    }, 60000);
+  }
 };
 </script>
 
@@ -291,6 +330,14 @@ export default {
 .login-option-button:hover {
   border: 1px solid rgb(168, 173, 0);
   color: rgb(168, 173, 0);
+}
+
+#newsletter-modal span {
+  color: rgb(168, 173, 0);
+}
+
+.subscribe-button {
+  background-color: rgb(168, 173, 0);
 }
 
 .uk-navbar-container {

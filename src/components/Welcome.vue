@@ -88,12 +88,15 @@
 </template>
 
 <script>
+
 export default {
   name: "Welcome",
   props: {},
   data: function () {
     return {};
   },
+
+
 };
 </script>
 
