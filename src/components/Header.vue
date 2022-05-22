@@ -1,21 +1,11 @@
 <template>
   <div>
     <nav class="uk-navbar-container uk-padding-small" uk-navbar>
-      <button
-        id="hamburger-toggle"
-        class="uk-navbar-toggle"
-        uk-navbar-toggle-icon
-        uk-toggle="target: #hamburger-menu"
-        type="button"
-      ></button>
+      <button id="hamburger-toggle" class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #hamburger-menu"
+        type="button"></button>
       <div class="uk-navbar-left">
         <div class="uk-logo">
-          <img
-            @click="navigateToHome"
-            id="logo"
-            src="../assets/images/logo.png"
-            alt="Plug and Roll Logo"
-          />
+          <img @click="navigateToHome" id="logo" src="../assets/images/logo.png" alt="Plug and Roll Logo" />
         </div>
       </div>
 
@@ -79,9 +69,6 @@
             <div class="uk-navbar-dropdown">
               <ul class="uk-nav uk-navbar-dropdown-nav">
                 <li>
-                  <a href="#">Referenzen</a>
-                </li>
-                <li>
                   <a href="#">Team</a>
                 </li>
                 <li>
@@ -90,11 +77,14 @@
                 <li>
                   <a href="#">Blog</a>
                 </li>
+                <li>
+                  <a href="#">Referenzen</a>
+                </li>
+                <li>
+                  <a href="#">Kontakt</a>
+                </li>
               </ul>
             </div>
-          </li>
-          <li>
-            <a href="#">Support</a>
           </li>
         </ul>
       </div>
@@ -171,9 +161,7 @@
               <a href="#">Über Uns</a>
               <div class="uk-navbar-dropdown">
                 <ul class="uk-nav uk-navbar-dropdown-nav">
-                  <li>
-                    <a href="#">Referenzen</a>
-                  </li>
+
                   <li>
                     <a href="#">Team</a>
                   </li>
@@ -183,11 +171,14 @@
                   <li>
                     <a href="#">Blog</a>
                   </li>
+                  <li>
+                    <a href="#">Referenzen</a>
+                  </li>
+                  <li>
+                    <a href="#">Kontakt</a>
+                  </li>
                 </ul>
               </div>
-            </li>
-            <li>
-              <a href="#">Support</a>
             </li>
             <li>
               <a href="#" uk-toggle="target: #login-modal">Login</a>
@@ -208,20 +199,17 @@
 
         <p uk-margin>
           <button
-            class="uk-button uk-button-default uk-button-large uk-width-1-1 login-option-button uk-text-left uk-padding-small"
-          >
+            class="uk-button uk-button-default uk-button-large uk-width-1-1 login-option-button uk-text-left uk-padding-small">
             <span uk-icon="icon: user; ratio: 1"></span>
             Privater E-Drive : Ich fahre ein Elektroauto.
           </button>
           <button
-            class="uk-button uk-button-default uk-button-large uk-width-1-1 login-option-button uk-text-left uk-padding-small"
-          >
+            class="uk-button uk-button-default uk-button-large uk-width-1-1 login-option-button uk-text-left uk-padding-small">
             <span uk-icon="icon: server; ratio: 1"></span>
             Geschäftskunde: Ich vertrete eine Firma.
           </button>
           <button
-            class="uk-button uk-button-default uk-button-large uk-width-1-1 login-option-button uk-text-left uk-padding-small"
-          >
+            class="uk-button uk-button-default uk-button-large uk-width-1-1 login-option-button uk-text-left uk-padding-small">
             <span uk-icon="icon: mail; ratio: 1"></span>
             Individueller Flottenkunde: Von meiner Firma eingeladen.
           </button>
@@ -237,20 +225,17 @@
 
         <p uk-margin>
           <button
-            class="uk-button uk-button-default uk-button-large uk-width-1-1 login-option-button uk-text-left uk-padding-small"
-          >
+            class="uk-button uk-button-default uk-button-large uk-width-1-1 login-option-button uk-text-left uk-padding-small">
             <span uk-icon="icon: user; ratio: 1"></span>
             Privater E-Drive : Ich fahre ein Elektroauto.
           </button>
           <button
-            class="uk-button uk-button-default uk-button-large uk-width-1-1 login-option-button uk-text-left uk-padding-small"
-          >
+            class="uk-button uk-button-default uk-button-large uk-width-1-1 login-option-button uk-text-left uk-padding-small">
             <span uk-icon="icon: server; ratio: 1"></span>
             Geschäftskunde: Ich vertrete eine Firma.
           </button>
           <button
-            class="uk-button uk-button-default uk-button-large uk-width-1-1 login-option-button uk-text-left uk-padding-small"
-          >
+            class="uk-button uk-button-default uk-button-large uk-width-1-1 login-option-button uk-text-left uk-padding-small">
             <span uk-icon="icon: mail; ratio: 1"></span>
             Individueller Flottenkunde: Von meiner Firma eingeladen.
           </button>
@@ -265,21 +250,14 @@
 
         <p class="uk-text-center">
           <span uk-icon="icon: bolt; ratio: 1"></span> Bleiben Sie immer auf dem neusten Stand der Elektromibilität
-          <span
-            uk-icon="icon: bolt; ratio: 1"
-          ></span>
+          <span uk-icon="icon: bolt; ratio: 1"></span>
         </p>
 
         <form class="uk-form-stacked">
           <div class="uk-margin">
             <label class="uk-form-label" for="form-stacked-text">E-Mail</label>
             <div class="uk-form-controls">
-              <input
-                class="uk-input"
-                id="form-stacked-text"
-                type="email"
-                placeholder="Ihre E-Mail Adresse"
-              />
+              <input class="uk-input" id="form-stacked-text" type="email" placeholder="Ihre E-Mail Adresse" />
             </div>
           </div>
 
@@ -344,7 +322,7 @@ export default {
   background-color: #3d3c3c;
 }
 
-li.uk-active > a {
+li.uk-active>a {
   color: rgb(168, 173, 0);
 }
 
