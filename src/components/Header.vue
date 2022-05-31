@@ -36,6 +36,9 @@
                 <li>
                   <a href="#">Offerte anfragen</a>
                 </li>
+                <li>
+                  <a href="#">Shop</a>
+                </li>
               </ul>
             </div>
           </li>
@@ -128,6 +131,9 @@
                   </li>
                   <li>
                     <a href="#">Offerte anfragen</a>
+                  </li>
+                  <li>
+                    <a href="#">Shop</a>
                   </li>
                 </ul>
               </div>
